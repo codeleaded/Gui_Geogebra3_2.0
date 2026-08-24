@@ -158,9 +158,7 @@ void Menu_Set(int m){
 
 void Setup(AlxWindow* w){
 	Menu_Set(1);
-
 	Random_Set(Time_Nano());
-	Random_Get(6969);
 
 	meshCube = (mesh){ Vector_New(sizeof(Tri3D)) };
 	matProj = Matrix_MakeProjection(90.0f, (float)GetHeight() / (float)GetWidth(), 0.1f, 1000.0f);
